@@ -63,7 +63,6 @@ li {
 
 /* #region debug */
 
-/* #endregion debug */
 .debug .top,
 .debug .album,
 .debug .bottom {
@@ -109,6 +108,13 @@ li {
     color: black;
     border: 1px solid black;
 }
+
+.debug #verifica{
+    margin-right: 2rem;
+}
+
+/* #endregion debug */
+
 /* #region main */
 .container {
     height: 100vh;
@@ -190,13 +196,28 @@ RESPONSIVE LAYOUT
 ****************************************/
 
 /* #region responsive MD */
+@media screen and (max-width: 878px) {
+    #verifica{
+        color: red;
+    }
+}
 
 /* #endregion responsive MD */
 
 /* #region responsive S */
+@media screen and (max-width: 639px) {
+    #verifica{
+        color: green;
+    }
+}
 
 /* #endregion responsive S */
 
 /* #region responsive XS */
+@media screen and (max-width: 552px) {
+    #verifica{
+        color: yellow;
+    }
+}
 
 /* #endregion responsive XS */
