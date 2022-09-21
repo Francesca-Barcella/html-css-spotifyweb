@@ -104,13 +104,18 @@ li {
     height: calc(100% / 3);
 }
 
+.debug .song, .debug .controller, .debug .audio{
+    background-color: yellow;
+    color: black;
+    border: 1px solid black;
+}
 /* #region main */
 .container {
     height: 100vh;
 }
 
 .top {
-    height: calc(100vh - 100px);
+    height: calc(100% - 100px);
 }
 
 .bottom {
@@ -159,15 +164,24 @@ li {
     padding: 1rem 3rem;
 }
 
-.album{
-    background-color: rgb(50, 175, 203);
-
-}
-
 
 /* #endregion content_bar */
 
 /* #region player_bar */
+.player_bar{
+    justify-content: space-between;
+    height: 100%;
+}
+
+.player_bar .controller{
+    flex-grow: 1;
+}
+
+.player_bar > div{
+    padding: 1rem;
+    text-align: center;
+}
+
 
 /* #endregion player_bar */
 

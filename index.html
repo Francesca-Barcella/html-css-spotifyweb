@@ -17,7 +17,8 @@
 
 <body class="debug">
     <main class="container">
-        <section class="top d_flex">
+        <div class="top d_flex">
+            <!-- #region site_bar -->
             <section class="site_bar col_2 d_flex">
                 SITE_BAR
                 <div class="logo">1° row - logo</div>
@@ -25,8 +26,9 @@
                 <div class="playlist">3° row - playlist</div>
                 <div class="cta">4° row - cta</div>
             </section>
+            <!-- #endregion site_bar -->
 
-            <!-- #region content bar -->
+            <!-- #region content_bar -->
             <section class="content_bar col_10">
                 <div class="upgrade d_flex">
                     <div><a class="btn_up" href="#">EFFETTUA UPGRADE</a></div>
@@ -60,14 +62,17 @@
                     </div>
                 </div>
             </section>
-            <!-- #endregion content bar -->
-        </section>
-
-        <section class="bottom">
-            <section class="player_bar">
-                PLAYER_BAR
+            <!-- #endregion content_bar -->
+        </div>
+        <div class="bottom">
+            <!-- #region player_bar -->
+            <section class="player_bar d_flex">
+                <div class="song">CANZONE</div>
+                <div class="controller">CONTROLLI DEL PLAYER</div>
+                <div class="audio">CONTROLLI AUDIO</div>
             </section>
-        </section>
+            <!-- #endregion player_bar -->
+        </div>
     </main>
 </body>
 
