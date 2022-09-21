@@ -1,0 +1,49 @@
+****************************************
+DESKTOP FIRST
+****************************************
+
+/* #region common rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    margin: auto;
+}
+
+
+/* #endregion common rules */
+
+/* #region utilities */
+
+/* #endregion utilities */
+
+/* #region debug */
+
+/* #endregion debug */
+
+/* #region site_bar */
+
+/* #endregion site_bar */
+
+/* #region content_app */
+
+/* #endregion content_app */
+
+/* #region player_bar */
+
+/* #endregion player_bar */
+
+****************************************
+RESPONSIVE
+****************************************
+/* #region responsive tablet */
+
+/* #endregion responsive tablet */
+
+/* #region responsive mobile */
+
+/* #endregion responsive mobile */
