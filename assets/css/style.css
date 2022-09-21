@@ -43,6 +43,10 @@ li {
     flex-wrap: wrap;
 }
 
+.d_column{
+    flex-direction: column;
+}
+
 .col_2 {
     width: calc(100% / 12 * 2);
 }
@@ -86,6 +90,19 @@ li {
     height: 25%;
 }
 
+.debug [class^="col_"]{
+    border: 1px solid white;
+}
+
+.debug .list [class^="col_"]{
+    background-color: rgba(98, 190, 36, 0.881);
+}
+
+.debug .recently,
+.debug .created,
+.debug .popular{
+    height: calc(100% / 3);
+}
 
 /* #region main */
 .container {
@@ -107,7 +124,6 @@ li {
 .upgrade {
     padding: 1rem;
 }
-
 
 /* #endregion main */
 
@@ -142,6 +158,13 @@ li {
     border-radius: 2rem;
     padding: 1rem 3rem;
 }
+
+.album{
+    background-color: rgb(50, 175, 203);
+
+}
+
+
 /* #endregion content_bar */
 
 /* #region player_bar */
