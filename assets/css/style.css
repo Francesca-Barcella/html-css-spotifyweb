@@ -1,49 +1,69 @@
-****************************************
+/****************************************
 DESKTOP FIRST
-****************************************
+****************************************/
 
 /* #region common rules */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-img{
+img {
     max-width: 100%;
     margin: auto;
 }
-
 
 /* #endregion common rules */
 
 /* #region utilities */
 
+:root {
+    --sw-darker: #000000;
+    --sw-dark: #282828;
+    --sw-primary: #141922;
+    --sw-secondary: #5A5A5A;
+    --sw-secondary-lite: #C1C1C1;
+    --sw-light: #FFFFFF;
+}
+
 /* #endregion utilities */
 
 /* #region debug */
 
+
 /* #endregion debug */
+
+/* #region main */
+
+
+
+/* #endregion main */
 
 /* #region site_bar */
 
 /* #endregion site_bar */
 
-/* #region content_app */
+/* #region album */
 
-/* #endregion content_app */
+/* #endregion album */
 
 /* #region player_bar */
 
 /* #endregion player_bar */
 
-****************************************
-RESPONSIVE
-****************************************
-/* #region responsive tablet */
+/****************************************
+RESPONSIVE LAYOUT
+****************************************/
 
-/* #endregion responsive tablet */
+/* #region responsive MD */
 
-/* #region responsive mobile */
+/* #endregion responsive MD */
 
-/* #endregion responsive mobile */
+/* #region responsive S */
+
+/* #endregion responsive S */
+
+/* #region responsive XS */
+
+/* #endregion responsive XS */
