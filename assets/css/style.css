@@ -66,6 +66,27 @@ li {
     color: var(--sw-light)
 }
 
+.debug .logo{
+    background-color: rgba(0, 128, 0, 0.689);
+    height: 25%;
+}
+
+.debug .menu{
+    background-color: rgba(207, 50, 50, 0.775);
+    height: 25%;
+}
+
+.debug .playlist{
+    background-color: rgba(50, 35, 212, 0.774);
+    height: 25%;
+}
+
+.debug .cta{
+    background-color: rgba(207, 57, 187, 0.689);
+    height: 25%;
+}
+
+
 /* #region main */
 .container {
     height: 100vh;
@@ -93,6 +114,12 @@ li {
 /* #region site_bar */
 .site_bar {
     background-color: var(--sw-darker);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.site_bar>div{
+    padding: 1rem;
 }
 
 /* #endregion site_bar */
@@ -108,16 +135,14 @@ li {
     justify-content: flex-end;
 }
 
-.btn_up{
+.upgrade .btn_up{
     display: inline-block;
     border: 1px solid var(--sw-light);
     color: white;
     border-radius: 2rem;
     padding: 1rem 3rem;
 }
-
 /* #endregion content_bar */
-
 
 /* #region player_bar */
 
