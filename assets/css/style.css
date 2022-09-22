@@ -34,7 +34,7 @@ h4 {
     font-size: 12px;
 }
 
-[class^="col_"]:not( .site_bar [class^="col_"]) {
+[class^="col_"]:not(.site_bar [class^="col_"]) {
     padding: 1rem;
 }
 
@@ -56,7 +56,7 @@ li {
     --sw-secondary-lighter: #A3A3A3;
     --sw-light: #FFFFFF;
     --sw-hope: #ADFF2F;
-    
+
 }
 
 .d_flex {
@@ -139,35 +139,37 @@ li {
     max-width: 200px;
 }
 
-.site_bar .logo img{
+.site_bar .site_bar_xs {
+    display: none;
+}
+
+.site_bar .logo img {
     padding-right: 1rem;
 }
 
-.site_bar .menu{
+.site_bar .menu,
+.site_bar .cta {
     align-items: center;
 }
 
-.site_bar .menu h4{
+.site_bar .menu h4,
+.site_bar .cta h3 {
     margin-left: 1rem;
     color: var(--sw-secondary);
 }
 
-.site_bar .menu .selected, .site_bar .playlist select{
+.site_bar .menu .selected,
+.site_bar .playlist .selected {
     color: red;
 }
 
-.site_bar .add h2{
+.site_bar .add h2 {
     font-weight: bold;
 }
 
-.site_bar .add a{
+.site_bar .add a {
     margin: 0.3rem 0;
 }
-
-.selected{
-    color: red;
-}
-
 
 /* #endregion site_bar */
 
@@ -296,6 +298,32 @@ RESPONSIVE LAYOUT
     #verifica {
         color: yellow;
     }
+
+    .site_bar {
+        max-width: 50px;
+    }
+
+   /*  .site_bar .logo_lg,
+    .site_bar .menu .col_10,
+    .site_bar .playlist,
+    .site_bar .col_10 {
+        display: none;
+    }
+
+    .site_bar .logo_xs{
+        display: block;
+    } */
+
+    .site_bar{
+        display: none;
+    }
+
+    .site_bar_xs{
+        display: block;
+        width: calc(100% / 12 *2);
+        background-color: var(--sw-darker);
+    }
+
 }
 
 /*
