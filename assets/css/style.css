@@ -152,9 +152,8 @@ li {
     color: var(--sw-secondary);
 }
 
-.site_bar .menu .selected{
-    color: pink;
-    background-color: pink;
+.site_bar .menu .selected, .site_bar .playlist select{
+    color: red;
 }
 
 .site_bar .add h2{
@@ -163,7 +162,10 @@ li {
 
 .site_bar .add a{
     margin: 0.3rem 0;
-    color: green;
+}
+
+.selected{
+    color: red;
 }
 
 
