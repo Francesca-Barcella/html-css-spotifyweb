@@ -18,15 +18,6 @@ img {
     margin: auto;
 }
 
-a,
-li {
-    text-decoration: none;
-}
-
-[class^="col_"] {
-    padding: 1rem;
-}
-
 h1 {
     font-size: 24px;
 }
@@ -41,6 +32,15 @@ h3 {
 
 h4 {
     font-size: 12px;
+}
+
+[class^="col_"]:not( .menu [class^="col_"]) {
+    padding: 1rem;
+}
+
+a,
+li {
+    text-decoration: none;
 }
 
 /* #endregion common rules */
@@ -133,14 +133,24 @@ h4 {
     background-color: var(--sw-darker);
     flex-direction: column;
     justify-content: space-between;
+    max-width: 200px;
 }
 
-.site_bar div {
-    padding: 1rem;
+.site_bar .logo img{
+    padding-right: 1rem;
 }
 
-.site_bar .menu img {
-    max-width: 30px;
+.site_bar .menu{
+    align-items: center;
+}
+
+.site_bar .menu h4{
+    margin-left: 1rem;
+    color: var(--sw-secondary);
+}
+
+#home{
+    color: var(--sw-secondary-lite);
 }
 
 
@@ -150,6 +160,7 @@ h4 {
 .content_bar {
     background-color: var(--sw-primary);
     overflow: auto;
+    width: 100%;
 }
 
 .content_bar .upgrade {
@@ -210,7 +221,6 @@ h4 {
 .content_bar .popular img {
     border-radius: 50%;
 }
-
 
 /* #endregion content_bar */
 
