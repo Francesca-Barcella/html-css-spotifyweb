@@ -42,6 +42,7 @@ a,
 li {
     text-decoration: none;
     color: var(--sw-secondary);
+    display: inline-block;
 }
 
 /* #endregion common rules */
@@ -139,7 +140,7 @@ li {
     max-width: 200px;
 }
 
-.site_bar .site_bar_xs {
+.site_bar_xs {
     display: none;
 }
 
@@ -169,6 +170,27 @@ li {
 
 .site_bar .add a {
     margin: 0.3rem 0;
+}
+
+.site_bar_xs {
+    position: relative;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.site_bar_xs .bottom_menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.site_bar_xs img {
+    width: 70%;
+}
+
+.site_bar_xs .top_menu a{
+    display: inline-block;
+    padding: 1rem 0;
 }
 
 /* #endregion site_bar */
@@ -300,38 +322,17 @@ RESPONSIVE LAYOUT
     }
 
     .site_bar {
-        max-width: 50px;
-    }
-
-   /*  .site_bar .logo_lg,
-    .site_bar .menu .col_10,
-    .site_bar .playlist,
-    .site_bar .col_10 {
         display: none;
     }
 
-    .site_bar .logo_xs{
-        display: block;
-    } */
-
-    .site_bar{
-        display: none;
-    }
-
-    .site_bar_xs{
+    .site_bar_xs {
         display: block;
         width: calc(100% / 12 *2);
         background-color: var(--sw-darker);
     }
 
-}
 
-/*
-    ****************************************************
-    ipotesi per site_bar:
-    1°fare display none su tutti i testi e mantenere solo le icone
-    2° da capire strada facendo se meglio creare un secondo div solo con le icone e fare display none su tutto il div di partenza
-    ****************************************************
-    */
+
+}
 
 /* #endregion responsive XS */
