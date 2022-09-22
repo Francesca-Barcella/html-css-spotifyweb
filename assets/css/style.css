@@ -34,13 +34,14 @@ h4 {
     font-size: 12px;
 }
 
-[class^="col_"]:not( .menu [class^="col_"]) {
+[class^="col_"]:not( .site_bar [class^="col_"]) {
     padding: 1rem;
 }
 
 a,
 li {
     text-decoration: none;
+    color: var(--sw-secondary);
 }
 
 /* #endregion common rules */
@@ -52,8 +53,10 @@ li {
     --sw-primary: #141922;
     --sw-secondary: #5A5A5A;
     --sw-secondary-lite: #C1C1C1;
+    --sw-secondary-lighter: #A3A3A3;
     --sw-light: #FFFFFF;
     --sw-hope: #ADFF2F;
+    
 }
 
 .d_flex {
@@ -149,8 +152,18 @@ li {
     color: var(--sw-secondary);
 }
 
-#home{
-    color: var(--sw-secondary-lite);
+.site_bar .menu .selected{
+    color: pink;
+    background-color: pink;
+}
+
+.site_bar .add h2{
+    font-weight: bold;
+}
+
+.site_bar .add a{
+    margin: 0.3rem 0;
+    color: green;
 }
 
 
