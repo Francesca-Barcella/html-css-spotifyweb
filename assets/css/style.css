@@ -23,6 +23,26 @@ li {
     text-decoration: none;
 }
 
+[class^="col_"] {
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+h4 {
+    font-size: 12px;
+}
+
 /* #endregion common rules */
 
 /* #region utilities */
@@ -43,7 +63,7 @@ li {
     flex-wrap: wrap;
 }
 
-.d_column{
+.d_column {
     flex-direction: column;
 }
 
@@ -55,61 +75,34 @@ li {
     width: calc(100% / 12 * 10);
 }
 
-[class^="col_"] {
-    padding: 1rem;
-}
-
 /* #endregion utilities */
 
 /* #region debug */
 
 .debug .top,
-.debug .album,
 .debug .bottom {
     color: var(--sw-light)
 }
 
-.debug .logo{
-    background-color: rgba(0, 128, 0, 0.689);
-    height: 25%;
-}
-
-.debug .menu{
-    background-color: rgba(207, 50, 50, 0.775);
-    height: 25%;
-}
-
-.debug .playlist{
-    background-color: rgba(50, 35, 212, 0.774);
-    height: 25%;
-}
-
-.debug .cta{
-    background-color: rgba(207, 57, 187, 0.689);
-    height: 25%;
-}
-
-.debug [class^="col_"]{
+/* .debug [class^="col_"] {
     border: 1px solid white;
-}
-
-.debug .list [class^="col_"]{
-    background-color: rgba(98, 190, 36, 0.881);
-}
+} */
 
 .debug .recently,
 .debug .created,
-.debug .popular{
+.debug .popular {
     height: calc(100% / 3);
 }
 
-.debug .song, .debug .controller, .debug .audio{
+.debug .song,
+.debug .controller,
+.debug .audio {
     background-color: yellow;
     color: black;
     border: 1px solid black;
 }
 
-.debug #verifica{
+.debug #verifica {
     margin-right: 2rem;
 }
 
@@ -145,9 +138,14 @@ li {
     justify-content: space-between;
 }
 
-.site_bar>div{
+.site_bar div {
     padding: 1rem;
 }
+
+.site_bar .menu img {
+    max-width: 30px;
+}
+
 
 /* #endregion site_bar */
 
@@ -156,13 +154,13 @@ li {
     background-color: var(--sw-primary);
 }
 
-.upgrade {
+.content_bar .upgrade {
     background-color: rgba(0, 0, 0, 0.7);
     height: 100px;
     justify-content: flex-end;
 }
 
-.upgrade .btn_up{
+.content_bar .upgrade .btn_up {
     display: inline-block;
     border: 1px solid var(--sw-light);
     color: white;
@@ -170,20 +168,34 @@ li {
     padding: 1rem 3rem;
 }
 
+.content_bar h1 {
+    padding: 1rem;
+}
+
+.content_bar h4 {
+    padding: 0 1rem;
+    color: var(--sw-secondary);
+}
+
+.content_bar .list h4,
+.content_bar .list h2 {
+    text-align: center;
+    padding: 0.5rem;
+}
 
 /* #endregion content_bar */
 
 /* #region player_bar */
-.player_bar{
+.player_bar {
     justify-content: space-between;
     height: 100%;
 }
 
-.player_bar .controller{
+.player_bar .controller {
     flex-grow: 1;
 }
 
-.player_bar > div{
+.player_bar>div {
     padding: 1rem;
     text-align: center;
 }
@@ -197,8 +209,16 @@ RESPONSIVE LAYOUT
 
 /* #region responsive MD */
 @media screen and (max-width: 878px) {
-    #verifica{
+    #verifica {
         color: red;
+    }
+
+    .list {
+        flex-wrap: wrap;
+    }
+
+    .album .col_2 {
+        width: calc(100% / 12 * 3);
     }
 }
 
@@ -206,8 +226,12 @@ RESPONSIVE LAYOUT
 
 /* #region responsive S */
 @media screen and (max-width: 639px) {
-    #verifica{
+    #verifica {
         color: green;
+    }
+
+    .album .col_2 {
+        width: 50%;
     }
 }
 
@@ -215,9 +239,17 @@ RESPONSIVE LAYOUT
 
 /* #region responsive XS */
 @media screen and (max-width: 552px) {
-    #verifica{
+    #verifica {
         color: yellow;
     }
 }
+
+/*
+    ****************************************************
+    ipotesi per site_bar:
+    1°fare display none su tutti i testi e mantenere solo le icone
+    2° da capire strada facendo se meglio creare un secondo div solo con le icone e fare display none su tutto il div di partenza
+    ****************************************************
+    */
 
 /* #endregion responsive XS */
