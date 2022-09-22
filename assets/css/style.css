@@ -152,6 +152,7 @@ h4 {
 /* #region content_bar */
 .content_bar {
     background-color: var(--sw-primary);
+    overflow: auto;
 }
 
 .content_bar .upgrade {
@@ -186,6 +187,7 @@ h4 {
 .content_bar .popular img{
     border-radius: 50%;
 }
+
 
 /* #endregion content_bar */
 
