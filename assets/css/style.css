@@ -182,8 +182,28 @@ li {
 
 .site_bar_bottom img{
     width: 20px;
+    margin-right: 0.5rem;
 }
 
+.site_bar_bottom .install{
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--sw-secondary);
+}
+
+.site_bar_bottom .user{
+    padding-top: 0.5rem;
+    align-items: center;
+}
+
+.site_bar_bottom .user img{
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sw-secondary);
+    border-radius: 50%;
+}
 /* #endregion site_bar */
 
 /* #region content_bar */
