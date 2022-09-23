@@ -300,8 +300,17 @@ li {
 }
 
 .player_bar .btn_controller{
-    justify-content: space-between;
+    justify-content: center;
     margin: 0.25rem 0;
+}
+
+.player_bar .btn_controller i{
+    color: var(--sw-secondary-lite);
+    margin: 0 1rem;
+}
+
+.player_bar .btn_controller #prova{
+    color: var(--sw-light);
 }
 
 .player_bar .progress_bar{
@@ -330,6 +339,10 @@ li {
 
 .player_bar .audio a{
     margin-right: 0.5rem;
+}
+
+.player_bar .audio i{
+    color: var(--sw-secondary-lite);
 }
 
 .player_bar .audio .progress_bar .long{
