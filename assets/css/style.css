@@ -34,15 +34,10 @@ h4 {
     font-size: 12px;
 }
 
-[class^="col_"]:not(.site_bar [class^="col_"]) {
-    padding: 1rem;
-}
-
 a,
 li {
     text-decoration: none;
     color: var(--sw-secondary);
-    display: inline-block;
 }
 
 /* #endregion common rules */
@@ -83,24 +78,10 @@ li {
 /* #endregion utilities */
 
 /* #region debug */
-
-.debug .top,
-.debug .bottom {
-    color: var(--sw-light)
-}
-
-.debug .recently,
-.debug .created,
-.debug .popular {
-    height: calc(100% / 3);
-}
-
 .debug .song,
 .debug .controller,
 .debug .audio {
-    background-color: yellow;
-    color: black;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 .debug #verifica {
@@ -124,7 +105,7 @@ li {
 }
 
 .site_bar,
-.player_bar,
+.bottom,
 .album,
 .upgrade {
     padding: 1rem;
@@ -137,7 +118,6 @@ li {
     background-color: var(--sw-darker);
     flex-direction: column;
     justify-content: space-between;
-    max-width: 200px;
 }
 
 .site_bar_xs {
@@ -185,12 +165,11 @@ li {
 }
 
 .site_bar_xs img {
-    width: 70%;
-}
-
-.site_bar_xs .top_menu a{
+    width: 60%;
     display: inline-block;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
+    fill: green;
+    background-color: red;
 }
 
 /* #endregion site_bar */
@@ -218,6 +197,10 @@ li {
     color: white;
     border-radius: 2rem;
     padding: 1rem 3rem;
+}
+
+.content_bar .album [class^="col_"] {
+    padding: 1rem;
 }
 
 .content_bar .album ul {
@@ -251,6 +234,11 @@ li {
     color: var(--sw-secondary);
 }
 
+.content_bar h1,
+.content_bar h2 {
+    color: var(--sw-light);
+}
+
 .content_bar .list h4,
 .content_bar .list h2 {
     text-align: center;
@@ -267,16 +255,19 @@ li {
 .player_bar {
     justify-content: space-between;
     height: 100%;
+    color: var(--sw-secondary-lite);
 }
 
-.player_bar .controller {
-    flex-grow: 1;
+.player_bar img {
+    height: 66px;
 }
 
-.player_bar>div {
-    padding: 1rem;
-    text-align: center;
+.player_bar .song {
+    justify-content: space-between;
+    padding-right: 1rem;
+    align-items: center;
 }
+
 
 
 /* #endregion player_bar */
@@ -331,8 +322,17 @@ RESPONSIVE LAYOUT
         background-color: var(--sw-darker);
     }
 
+    .player_bar h3{
+        font-size: 10px;
+    }
 
+    .player_bar i{
+        width: 10px;
+    }
 
+    .player_bar img{
+        height: 100%;
+    }
 }
 
 /* #endregion responsive XS */
