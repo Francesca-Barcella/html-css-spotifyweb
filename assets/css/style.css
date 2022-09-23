@@ -82,15 +82,6 @@ li {
 /* #endregion utilities */
 
 /* #region debug */
-.debug .song,
-.debug .controller,
-.debug .audio {
-    border: 1px solid white;
-}
-
-.debug #verifica {
-    margin-right: 2rem;
-}
 
 /* #endregion debug */
 
@@ -308,10 +299,6 @@ li {
     height: 66px;
 }
 
-/* .player_bar .controller{
-    flex-grow: 1;
-} */
-
 .player_bar .btn_controller{
     justify-content: space-between;
     margin: 0.25rem 0;
@@ -329,7 +316,7 @@ li {
     margin: 1rem;
 }
 
-.player_bar .progress_bar .short{
+.player_bar .controller .progress_bar .short{
     height: 5px;
     width: 200px;
     background-color: var(--sw-secondary-lite);
@@ -367,10 +354,6 @@ RESPONSIVE LAYOUT
 
 /* #region responsive MD */
 @media screen and (max-width: 878px) {
-    #verifica {
-        color: red;
-    }
-
     .list {
         flex-wrap: wrap;
     }
@@ -379,18 +362,80 @@ RESPONSIVE LAYOUT
         width: calc(100% / 12 * 3);
     }
 
+    .player_bar .controller .progress_bar .long{
+        height: 5px;
+        width: 200px;
+        background-color: var(--sw-secondary);
+        border-radius: 5px;
+        margin: 1rem;
+    }
+    
+    .player_bar .controller .progress_bar .short{
+        height: 5px;
+        width: 80px;
+        background-color: var(--sw-secondary-lite);
+        border-radius: 5px;
+    }
+
+    .player_bar .audio a{
+        margin-right: 0.25rem;
+    }
+    
+    .player_bar .audio .progress_bar .long{
+        height: 5px;
+        width: 50px;
+        background-color: var(--sw-secondary);
+        border-radius: 5px;
+    }
+    
+    .player_bar .audio .progress_bar .short{
+        height: 5px;
+        width: 13px;
+        background-color: var(--sw-secondary-lite);
+        border-radius: 5px;
+    }
+
 }
 
 /* #endregion responsive MD */
 
 /* #region responsive S */
 @media screen and (max-width: 639px) {
-    #verifica {
-        color: green;
-    }
-
     .album .col_2 {
         width: 50%;
+    }
+
+    .player_bar .controller .progress_bar .long{
+        height: 5px;
+        width: 150px;
+        background-color: var(--sw-secondary);
+        border-radius: 5px;
+        margin: 1rem;
+    }
+    
+    .player_bar .controller .progress_bar .short{
+        height: 5px;
+        width: 60px;
+        background-color: var(--sw-secondary-lite);
+        border-radius: 5px;
+    }
+
+    .player_bar .audio a{
+        margin-right: 0.25rem;
+    }
+    
+    .player_bar .audio .progress_bar .long{
+        height: 5px;
+        width: 40px;
+        background-color: var(--sw-secondary);
+        border-radius: 5px;
+    }
+    
+    .player_bar .audio .progress_bar .short{
+        height: 5px;
+        width: 10px;
+        background-color: var(--sw-secondary-lite);
+        border-radius: 5px;
     }
 
 }
@@ -399,10 +444,6 @@ RESPONSIVE LAYOUT
 
 /* #region responsive XS */
 @media screen and (max-width: 552px) {
-    #verifica {
-        color: yellow;
-    }
-
     .site_bar {
         width: 50px;
     }
