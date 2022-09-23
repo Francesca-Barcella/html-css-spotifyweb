@@ -108,6 +108,12 @@ li {
     background-color: var(--sw-dark);
 }
 
+.upgrade,
+.album,
+.player_bar {
+    padding: 1rem;
+}
+
 /* #endregion main */
 
 /* #region site_bar */
@@ -136,16 +142,16 @@ li {
     display: none;
 }
 
-.site_bar_top .menu{
+.site_bar_top .menu {
     padding: 1rem 0;
 }
 
-.site_bar_top .menu li{
+.site_bar_top .menu li {
     list-style: none;
     align-items: center;
 }
 
-.site_bar_top .menu a{
+.site_bar_top .menu a {
     margin-right: 0.5rem;
 }
 
@@ -287,8 +293,9 @@ li {
     color: var(--sw-secondary-lite);
 }
 
-.player_bar img {
-    height: 66px;
+.player_bar .song {
+    justify-content: space-between;
+    width: 240px;
 }
 
 .player_bar .song {
@@ -297,7 +304,60 @@ li {
     align-items: center;
 }
 
+.player_bar .song img {
+    height: 66px;
+}
 
+/* .player_bar .controller{
+    flex-grow: 1;
+} */
+
+.player_bar .btn_controller{
+    justify-content: space-between;
+    margin: 0.25rem 0;
+}
+
+.player_bar .progress_bar{
+    align-items: center;
+}
+
+.player_bar .controller .progress_bar .long{
+    height: 5px;
+    width: 500px;
+    background-color: var(--sw-secondary);
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.player_bar .progress_bar .short{
+    height: 5px;
+    width: 200px;
+    background-color: var(--sw-secondary-lite);
+    border-radius: 5px;
+}
+
+.player_bar .audio{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.player_bar .audio a{
+    margin-right: 0.5rem;
+}
+
+.player_bar .audio .progress_bar .long{
+    height: 5px;
+    width: 100px;
+    background-color: var(--sw-secondary);
+    border-radius: 5px;
+}
+
+.player_bar .audio .progress_bar .short{
+    height: 5px;
+    width: 25px;
+    background-color: var(--sw-secondary-lite);
+    border-radius: 5px;
+}
 
 /* #endregion player_bar */
 
@@ -318,6 +378,7 @@ RESPONSIVE LAYOUT
     .album .col_2 {
         width: calc(100% / 12 * 3);
     }
+
 }
 
 /* #endregion responsive MD */
@@ -331,6 +392,7 @@ RESPONSIVE LAYOUT
     .album .col_2 {
         width: 50%;
     }
+
 }
 
 /* #endregion responsive S */
@@ -341,13 +403,18 @@ RESPONSIVE LAYOUT
         color: yellow;
     }
 
-    .site_bar{
+    .site_bar {
         width: 50px;
     }
 
+    .content_bar {
+        width: calc(100% - 50px);
+    }
+
     .site_bar_top .logo_lg,
-    .site_bar_top h4,
-    .site_bar_top .playlist {
+    .site_bar_top .menu h4,
+    .site_bar_top .playlist,
+    .site_bar_bottom {
         display: none;
     }
 
@@ -355,23 +422,14 @@ RESPONSIVE LAYOUT
         display: inline-block;
     }
 
-    .content_bar {
-        width: calc(100% - 50px);
+    .site_bar {
+        padding: 0.3rem;
     }
 
-
-
-/*     .player_bar h3 {
-        font-size: 10px;
+    .site_bar_top .menu {
+        padding: 0;
     }
 
-    .player_bar i {
-        width: 10px;
-    }
-
-    .player_bar img {
-        height: 100%;
-    } */
 }
 
 /* #endregion responsive XS */
