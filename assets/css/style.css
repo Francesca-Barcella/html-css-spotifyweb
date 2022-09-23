@@ -75,6 +75,10 @@ li {
     width: calc(100% / 12 * 10);
 }
 
+ .filter{
+    filter: brightness(0.5);
+ }
+
 /* #endregion utilities */
 
 /* #region debug */
@@ -128,6 +132,10 @@ li {
     padding-right: 1rem;
 }
 
+.site_bar img{
+    filter: grayscale(50%);
+}
+
 .site_bar .menu,
 .site_bar .cta {
     align-items: center;
@@ -141,7 +149,7 @@ li {
 
 .site_bar .menu .selected,
 .site_bar .playlist .selected {
-    color: red;
+    color: var(--sw-light)
 }
 
 .site_bar .add h2 {
@@ -168,7 +176,10 @@ li {
     width: 60%;
     display: inline-block;
     padding: 0.5rem 0;
-    fill: green;
+}
+
+.site_bar_xs .top_menu a{
+    color: green;
     background-color: red;
 }
 
