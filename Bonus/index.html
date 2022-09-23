@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bonus Spotify Web</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-ic" href="./assets/img/favicon.ico">
+</head>
+
+<body class="debug">
+    <main class="container">
+        <div class="top d_flex">
+            <!-- #region site_bar -->
+            <section class="site_bar d_flex">
+                <div class="site_bar_top">
+                    <div class="logo">
+                        <img class="logo_lg" src="./assets/img/logo.svg" alt="">
+                        <img class="logo_xs" src="./assets/img/logo-small.svg" alt="">
+                    </div>
+                    <div class="menu d_flex">
+                        <ul>
+                            <li class="d_flex">
+                                <a href="#"><img src="./assets/img/home.svg" alt=""></a>
+                                <a class="selected" href="#"><h4>Home</h4></a>
+                            </li>
+                            <li class="d_flex">
+                                <a class="filter" href="#"><img src="./assets/img/search.svg" alt=""></a>
+                                <a href="#"><h4>Search</h4></a>
+                            </li>
+                            <li class="d_flex">
+                                <a class="filter" href="#"><img src="./assets/img/libreria.svg" alt=""></a>
+                                <a href="#"><h4>La tua libreria</h4></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="playlist">
+                        <h3 class="selected">PLAYLIST</h3>
+                        <div class="add d_flex">
+                            <a href="#" class="btn"><i class="fa-solid fa-plus"></i></a>
+                            <span><a href="#"><h2 class="selected">Crea Playlist</h2></a></span>
+                        </div>
+                        <a href="#"><h2>Nuova Playlist</h2></a>
+                        <a href="#"><h2>Nuova Playlist</h2></a>
+                        <a href="#"><h2>Nuova Playlist</h2></a>
+                        <a href="#"><h2>Nuova Playlist</h2></a>
+                        <a href="#"><h2>Nuova Playlist</h2></a>
+                        <a href="#"><h2>Nuova Playlist</h2></a>
+                        <a href="#"><h2>Nuova Playlist</h2></a>
+                    </div>
+                </div>
+                <!-- / site_bar_top -->
+                <div class="site_bar_bottom">
+                    <div class="install d_flex filter">
+                        <a href="#"><img src="./assets/img/download.svg" alt=""></a>
+                        <a href="#"><h3>Installa app</h3></a>
+                    </div>
+                    <div class="user d_flex">
+                        <a href="#"><img src="./assets/img/profile.svg" alt=""></a>
+                        <a href="#"><h3 class="selected">John Doe</h3></a>
+                    </div>
+                </div>
+                <!-- / site_bar_bottomp -->
+            </section>
+            <!-- #endregion site_bar -->
+
+            <!-- #region content_bar -->
+            <section class="content_bar">
+                <div class="upgrade d_flex">
+                    <div><a class="btn_up" href="#">EFFETTUA UPGRADE</a></div>
+                </div>
+                <div class="album">
+                    <ul class="inline_list d_flex f_wrap">
+                        <li id="evidenza"><a href="#">IN EVIDENZA</a>
+                            <div>
+                        </li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVE USCITE</a></li>
+                        <li><a href="#">SCOPRI</a></li>
+                    </ul>
+                    <!-- #region album recenti-->
+                    <div class="recently ">
+                        <h1>Recently Played</h1>
+                        <div class="list d_flex">
+                            <div class="col_2">
+                                <img src="./assets/img/metal_lifting.jpg" alt="">
+                                <h2>Heavy Metal</h2>
+                                <h4>Subtitle</h4>
+                            </div class="col_2">
+                            <div class="col_2">
+                                <img src="./assets/img/stranger.jpeg" alt="">
+                                <h2>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h2>
+                                <h4>Kyle Dixon & Michael Stein</h4>
+                            </div class="col_2">
+                            <div class="col_2">
+                                <img src="./assets/img/aquietplace.jpeg" alt="">
+                                <h2>A qquiet place</h2>
+                                <h4>Subtitle</h4>
+                            </div class="col_2">
+                            <div class="col_2">
+                                <img src="./assets/img/split.jpeg" alt="">
+                                <h2>Split</h2>
+                                <h4>Subtitle</h4>
+                            </div class="col_2">
+                            <div class="col_2">
+                                <img src="./assets/img/cure.jpeg" alt="">
+                                <h2>A cure for wellnes</h2>
+                                <h4>Subtitle</h4>
+                            </div class="col_2">
+                            <div class="col_2">
+                                <img src="./assets/img/sinister.jpeg" alt="">
+                                <h2>Sinister</h2>
+                                <h4>Subtitle</h4>
+                            </div class="col_2">
+                        </div>
+                    </div>
+                    <!-- #endregion album recenti-->
+
+                    <!-- #region creato per te-->
+                    <div class="created">
+                        <h1>Creato per John Doe</h1>
+                        <h4>Pi&#217; ascolti, pi&#217; accurati saranno i suggerimenti</h4>
+                        <div class="list d_flex">
+                            <div class="col_2">
+                                <img src="./assets/img/radar.jpeg" alt="">
+                                <h2>Release Radar</h2>
+                            </div class="col_2">
+                            <div class="col_2">
+                                <img src="./assets/img/mixdaily.jpeg" alt="">
+                                <h2>Daily Mix 1</h2>
+                            </div class="col_2">
+                        </div>
+                    </div>
+                    <!-- #endregion creato per te-->
+
+                    <!-- #region popolari-->
+                    <div class="popular">
+                        <h1>Artisti pi&#217; popolari</h1>
+                        <h4>Pi&#217; ascolti, pi&#217; accurati saranno i suggerimenti</h4>
+                        <div class="list d_flex">
+                            <div class="col_2">
+                                <img src="./assets/img/youg.jpeg" alt="">
+                                <h2>lana del Rey</h2>
+                            </div class="col_2">
+                            <div class="col_2">
+                                <img src="./assets/img/einaudi.jpeg" alt="">
+                                <h2>Ludovico Einaudi</h2>
+                            </div class="col_2">
+                        </div>
+                    </div>
+                    <!-- #endregion popolari-->
+                </div>
+            </section>
+            <!-- #endregion content_bar -->
+        </div>
+        <div class="bottom">
+            <!-- #region player_bar -->
+            <section class="player_bar d_flex">
+                <div class="song d_flex">
+                    <div>
+                        <img src="./assets/img/sinister.jpeg" alt="">
+                    </div>
+                    <div class="center">
+                        <h3>Sinister</h3>
+                        <h3>Brano Nome</h3>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a href="#"><i class="fa-regular fa-folder"></i></a>
+                    </div>
+
+                </div>
+                    <div class="controller">
+                        <div class="btn_controller d_flex">
+                            <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                            <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                            <a href="#"><i id="prova" class="fa-regular fa-circle-play"></i></a>
+                            <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                            <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
+                        </div>
+                        <div class="progress_bar d_flex">
+                            <span>0:25</span>
+                            <div class="long"><div class="short"></div></div>                    
+                            <span>4:35</span>
+                        </div>
+                    </div>
+                <div class="audio d_flex">
+                    <a href="#"><i class="fa-solid fa-list"></i></a>
+                    <a href="#"><i class="fa-solid fa-desktop"></i></a>
+                    <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+                    <div class="progress_bar d_flex">
+                        <div class="long"><div class="short"></div></div>
+                    </div>
+                </div>
+            </section>
+            <!-- #endregion player_bar -->
+        </div>
+    </main>
+</body>
+
+</html>
