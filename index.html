@@ -20,30 +20,29 @@
     <main class="container">
         <div class="top d_flex">
             <!-- #region site_bar -->
-            <section class="site_bar col_2 d_flex">
+            <section class="site_bar d_flex">
                 <div class="site_bar_top">
                     <div class="logo">
                         <img class="logo_lg" src="./assets/img/logo.svg" alt="">
                         <img class="logo_xs" src="./assets/img/logo-small.svg" alt="">
                     </div>
-                    <div class="menu d_flex f_wrap">
-                        <div class="col_2"><a href="#"><img src="./assets/img/home.svg" alt=""></a></div>
-                        <div class="col_10">
-                            <a href="#">
-                                <h4 class="selected">Home</h4>
-                            </a>
-                        </div>
-                        <div class="col_2 filter"><a href="#"><img src="./assets/img/search.svg" alt=""></a></div>
-                        <div class="col_10 ">
-                            <a href="#">
-                                <h4>Cerca</h4>
-                            </a>
-                        </div>
-                        <div class="col_2 filter"><a href="#"><img src="./assets/img/libreria.svg" alt=""></a></div>
-                        <div class="col_10"><a href="#">
-                                <h4>La mia libreria</h4>
-                            </a></div>
+                    <div class="menu d_flex">
+                        <ul>
+                            <li class="d_flex">
+                                <a href="#"><img src="./assets/img/home.svg" alt=""></a>
+                                <a class="selected" href="#"><h4>Home</h4></a>
+                            </li>
+                            <li class="d_flex">
+                                <a class="filter" href="#"><img src="./assets/img/search.svg" alt=""></a>
+                                <a href="#"><h4>Search</h4></a>
+                            </li>
+                            <li class="d_flex">
+                                <a class="filter" href="#"><img src="./assets/img/libreria.svg" alt=""></a>
+                                <a href="#"><h4>La tua libreria</h4></a>
+                            </li>
+                        </ul>
                     </div>
+
                     <div class="playlist">
                         <h3 class="selected">PLAYLIST</h3>
                         <div class="add d_flex">
@@ -75,7 +74,7 @@
             <!-- #endregion site_bar -->
 
             <!-- #region content_bar -->
-            <section class="content_bar col_10">
+            <section class="content_bar">
                 <div class="upgrade d_flex">
                     <div id="verifica">VERIFICA BREAKPOINT</div>
                     <div><a class="btn_up" href="#">EFFETTUA UPGRADE</a></div>

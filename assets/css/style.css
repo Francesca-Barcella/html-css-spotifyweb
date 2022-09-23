@@ -108,22 +108,17 @@ li {
     background-color: var(--sw-dark);
 }
 
-.site_bar,
-.bottom,
-.album,
-.upgrade {
-    padding: 1rem;
-}
-
 /* #endregion main */
 
 /* #region site_bar */
 .site_bar {
     background-color: var(--sw-darker);
     flex-direction: column;
-    justify-content: space-between;
     color: var(--sw-secondary);
     overflow-y: hidden;
+    width: 240px;
+    padding: 1rem;
+    justify-content: space-between;
 }
 
 .site_bar .selected {
@@ -141,16 +136,24 @@ li {
     display: none;
 }
 
+.site_bar_top .menu{
+    padding: 1rem 0;
+}
+
+.site_bar_top .menu li{
+    list-style: none;
+    align-items: center;
+}
+
+.site_bar_top .menu a{
+    margin-right: 0.5rem;
+}
+
 .site_bar_top .menu img {
     width: 25px;
 }
 
-.site_bar_top .menu {
-    align-items: center;
-    padding-bottom: 1rem;
-}
-
-.site_bar_top .add {
+.site_bar_top .playlist .add {
     align-items: center;
     padding-bottom: 0.5rem;
 }
@@ -165,20 +168,12 @@ li {
     margin-right: 0.5rem;
 }
 
-.site_bar_top i {
-    color: var(--sw-darker);
-}
-
 .site_bar_top .playlist h2 {
     padding-bottom: 0.5rem;
 }
 
 .site_bar_top .playlist h3 {
     padding-bottom: 0.5rem;
-}
-
-.site_bar_top .menu h4 {
-    margin-left: 0.25rem;
 }
 
 .site_bar_bottom img {
@@ -212,7 +207,7 @@ li {
 .content_bar {
     background-color: var(--sw-primary);
     overflow: auto;
-    width: 100%;
+    width: calc(100% - 240px);
 }
 
 .content_bar .upgrade {
@@ -360,6 +355,9 @@ RESPONSIVE LAYOUT
         display: inline-block;
     }
 
+    .content_bar {
+        width: calc(100% - 50px);
+    }
 
 
 
