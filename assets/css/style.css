@@ -75,9 +75,9 @@ li {
     width: calc(100% / 12 * 10);
 }
 
- .filter{
+.filter {
     filter: brightness(0.5);
- }
+}
 
 /* #endregion utilities */
 
@@ -123,6 +123,7 @@ li {
     flex-direction: column;
     justify-content: space-between;
     color: var(--sw-secondary);
+    overflow-y: hidden;
 }
 
 .site_bar .selected {
@@ -135,12 +136,12 @@ li {
 }
 
 .site_bar_top .logo_xs {
-    width: 50px;
+    width: 40px;
     padding-bottom: 1rem;
     display: none;
 }
 
-.site_bar_top .menu img{
+.site_bar_top .menu img {
     width: 25px;
 }
 
@@ -149,12 +150,12 @@ li {
     padding-bottom: 1rem;
 }
 
-.site_bar_top .add{
+.site_bar_top .add {
     align-items: center;
     padding-bottom: 0.5rem;
 }
 
-.site_bar_top .playlist .btn{
+.site_bar_top .playlist .btn {
     width: 38px;
     aspect-ratio: 1 / 1;
     display: flex;
@@ -164,15 +165,15 @@ li {
     margin-right: 0.5rem;
 }
 
-.site_bar_top i{
+.site_bar_top i {
     color: var(--sw-darker);
 }
 
-.site_bar_top .playlist h2{
+.site_bar_top .playlist h2 {
     padding-bottom: 0.5rem;
 }
 
-.site_bar_top .playlist h3{
+.site_bar_top .playlist h3 {
     padding-bottom: 0.5rem;
 }
 
@@ -180,22 +181,22 @@ li {
     margin-left: 0.25rem;
 }
 
-.site_bar_bottom img{
+.site_bar_bottom img {
     width: 20px;
     margin-right: 0.5rem;
 }
 
-.site_bar_bottom .install{
+.site_bar_bottom .install {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--sw-secondary);
 }
 
-.site_bar_bottom .user{
+.site_bar_bottom .user {
     padding-top: 0.5rem;
     align-items: center;
 }
 
-.site_bar_bottom .user img{
+.site_bar_bottom .user img {
     width: 30px;
     aspect-ratio: 1 / 1;
     display: flex;
@@ -204,6 +205,7 @@ li {
     background-color: var(--sw-secondary);
     border-radius: 50%;
 }
+
 /* #endregion site_bar */
 
 /* #region content_bar */
@@ -344,27 +346,34 @@ RESPONSIVE LAYOUT
         color: yellow;
     }
 
-    .site_bar {
+    .site_bar{
+        width: 50px;
+    }
+
+    .site_bar_top .logo_lg,
+    .site_bar_top h4,
+    .site_bar_top .playlist {
         display: none;
     }
 
-    .site_bar_xs {
-        display: block;
-        width: calc(100% / 12 *2);
-        background-color: var(--sw-darker);
+    .site_bar_top .logo_xs {
+        display: inline-block;
     }
 
-    .player_bar h3{
+
+
+
+/*     .player_bar h3 {
         font-size: 10px;
     }
 
-    .player_bar i{
+    .player_bar i {
         width: 10px;
     }
 
-    .player_bar img{
+    .player_bar img {
         height: 100%;
-    }
+    } */
 }
 
 /* #endregion responsive XS */
