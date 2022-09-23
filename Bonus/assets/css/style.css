@@ -198,6 +198,11 @@ li {
     border-radius: 50%;
 }
 
+.site_bar_top .menu a:hover,
+.site_bar_top .playlist a:hover {
+    color: var(--sw-light)
+}
+
 /* #endregion site_bar */
 
 /* #region content_bar */
@@ -236,6 +241,10 @@ li {
 .content_bar .album li {
     list-style: none;
     padding: 1rem 0.75rem;
+}
+
+.content_bar .album a:hover {
+    color: var(--sw-light);
 }
 
 .content_bar .album a {
@@ -299,25 +308,25 @@ li {
     height: 66px;
 }
 
-.player_bar .btn_controller{
+.player_bar .btn_controller {
     justify-content: center;
     margin: 0.25rem 0;
 }
 
-.player_bar .btn_controller i{
+.player_bar .btn_controller i {
     color: var(--sw-secondary-lite);
     margin: 0 1rem;
 }
 
-.player_bar .btn_controller #prova{
+.player_bar .btn_controller #prova {
     color: var(--sw-light);
 }
 
-.player_bar .progress_bar{
+.player_bar .progress_bar {
     align-items: center;
 }
 
-.player_bar .controller .progress_bar .long{
+.player_bar .controller .progress_bar .long {
     height: 5px;
     width: 500px;
     background-color: var(--sw-secondary);
@@ -325,34 +334,34 @@ li {
     margin: 1rem;
 }
 
-.player_bar .controller .progress_bar .short{
+.player_bar .controller .progress_bar .short {
     height: 5px;
     width: 200px;
     background-color: var(--sw-secondary-lite);
     border-radius: 5px;
 }
 
-.player_bar .audio{
+.player_bar .audio {
     align-items: center;
     justify-content: space-between;
 }
 
-.player_bar .audio a{
+.player_bar .audio a {
     margin-right: 0.5rem;
 }
 
-.player_bar .audio i{
+.player_bar .audio i {
     color: var(--sw-secondary-lite);
 }
 
-.player_bar .audio .progress_bar .long{
+.player_bar .audio .progress_bar .long {
     height: 5px;
     width: 100px;
     background-color: var(--sw-secondary);
     border-radius: 5px;
 }
 
-.player_bar .audio .progress_bar .short{
+.player_bar .audio .progress_bar .short {
     height: 5px;
     width: 25px;
     background-color: var(--sw-secondary-lite);
@@ -375,33 +384,33 @@ RESPONSIVE LAYOUT
         width: calc(100% / 12 * 3);
     }
 
-    .player_bar .controller .progress_bar .long{
+    .player_bar .controller .progress_bar .long {
         height: 5px;
         width: 200px;
         background-color: var(--sw-secondary);
         border-radius: 5px;
         margin: 1rem;
     }
-    
-    .player_bar .controller .progress_bar .short{
+
+    .player_bar .controller .progress_bar .short {
         height: 5px;
         width: 80px;
         background-color: var(--sw-secondary-lite);
         border-radius: 5px;
     }
 
-    .player_bar .audio a{
+    .player_bar .audio a {
         margin-right: 0.25rem;
     }
-    
-    .player_bar .audio .progress_bar .long{
+
+    .player_bar .audio .progress_bar .long {
         height: 5px;
         width: 50px;
         background-color: var(--sw-secondary);
         border-radius: 5px;
     }
-    
-    .player_bar .audio .progress_bar .short{
+
+    .player_bar .audio .progress_bar .short {
         height: 5px;
         width: 13px;
         background-color: var(--sw-secondary-lite);
@@ -418,33 +427,33 @@ RESPONSIVE LAYOUT
         width: 50%;
     }
 
-    .player_bar .controller .progress_bar .long{
+    .player_bar .controller .progress_bar .long {
         height: 5px;
         width: 150px;
         background-color: var(--sw-secondary);
         border-radius: 5px;
         margin: 1rem;
     }
-    
-    .player_bar .controller .progress_bar .short{
+
+    .player_bar .controller .progress_bar .short {
         height: 5px;
         width: 60px;
         background-color: var(--sw-secondary-lite);
         border-radius: 5px;
     }
 
-    .player_bar .audio a{
+    .player_bar .audio a {
         margin-right: 0.25rem;
     }
-    
-    .player_bar .audio .progress_bar .long{
+
+    .player_bar .audio .progress_bar .long {
         height: 5px;
         width: 40px;
         background-color: var(--sw-secondary);
         border-radius: 5px;
     }
-    
-    .player_bar .audio .progress_bar .short{
+
+    .player_bar .audio .progress_bar .short {
         height: 5px;
         width: 10px;
         background-color: var(--sw-secondary-lite);
