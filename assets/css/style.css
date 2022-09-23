@@ -149,12 +149,9 @@ li {
     padding-bottom: 1rem;
 }
 
-.site_bar_top .menu h4 {
-    margin-left: 0.25rem;
-}
-
 .site_bar_top .add{
     align-items: center;
+    padding-bottom: 0.5rem;
 }
 
 .site_bar_top .playlist .btn{
@@ -177,6 +174,14 @@ li {
 
 .site_bar_top .playlist h3{
     padding-bottom: 0.5rem;
+}
+
+.site_bar_top .menu h4 {
+    margin-left: 0.25rem;
+}
+
+.site_bar_bottom img{
+    width: 20px;
 }
 
 /* #endregion site_bar */
