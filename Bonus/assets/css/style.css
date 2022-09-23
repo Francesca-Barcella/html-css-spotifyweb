@@ -40,6 +40,11 @@ li {
     color: var(--sw-secondary);
 }
 
+a:hover,
+i:hover {
+    color: var(--sw-light);
+}
+
 /* #endregion common rules */
 
 /* #region utilities */
@@ -198,11 +203,6 @@ li {
     border-radius: 50%;
 }
 
-.site_bar_top .menu a:hover,
-.site_bar_top .playlist a:hover {
-    color: var(--sw-light)
-}
-
 /* #endregion site_bar */
 
 /* #region content_bar */
@@ -314,8 +314,12 @@ li {
 }
 
 .player_bar .btn_controller i {
-    color: var(--sw-secondary-lite);
+    color: var(--sw-secondary);
     margin: 0 1rem;
+}
+
+.player_bar .btn_controller i:hover {
+    color: var(--sw-light);
 }
 
 .player_bar .btn_controller #prova {
@@ -351,7 +355,11 @@ li {
 }
 
 .player_bar .audio i {
-    color: var(--sw-secondary-lite);
+    color: var(--sw-secondary);
+}
+
+.player_bar .audio i:hover {
+    color: var(--sw-light);
 }
 
 .player_bar .audio .progress_bar .long {
