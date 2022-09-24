@@ -246,6 +246,24 @@ li {
     padding: 1rem 0.75rem;
 }
 
+.content_bar .card {
+    padding: 1rem;
+}
+
+.content_bar .brano{
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/metal_lifting.jpg);
+    background-size: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.content_bar .card i {
+    display: none;
+    font-size: 200%;
+    color: var(--sw-light);
+}
+
 .content_bar .album a {
     font-size: 13px;
     font-weight: bold;
@@ -317,10 +335,6 @@ li {
     margin: 0 1rem;
 }
 
-.player_bar .btn_controller #prova {
-    color: var(--sw-light);
-}
-
 .player_bar .progress_bar {
     align-items: center;
 }
@@ -380,9 +394,21 @@ i:hover {
     color: var(--sw-darker);
 }
 
-.content_bar .upgrade .btn_up:hover{
+.content_bar .album a:hover {
+    color: var(--sw-light);
+}
+
+.content_bar .upgrade .btn_up:hover {
     padding: 1.1rem 3.1rem;
     font-size: 17px;
+}
+
+.content_bar .card:hover .brano i{
+    display: inline-block;
+}
+
+.content_bar .card:hover{
+    cursor: pointer;
 }
 
 .player_bar .audio i:hover {
@@ -393,9 +419,9 @@ i:hover {
     color: var(--sw-light);
 }
 
-.content_bar .album a:hover {
-    color: var(--sw-light);
-}
+
+/* fare div con background img e immaggine dentro */
+
 
 /* #endregion hover&effects*/
 
