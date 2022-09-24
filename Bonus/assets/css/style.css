@@ -40,11 +40,6 @@ li {
     color: var(--sw-secondary);
 }
 
-a:hover,
-i:hover {
-    color: var(--sw-light);
-}
-
 /* #endregion common rules */
 
 /* #region utilities */
@@ -84,6 +79,10 @@ i:hover {
     filter: brightness(0.5);
 }
 
+.p_l_1{
+    padding-left: 1rem;
+}
+
 /* #endregion utilities */
 
 /* #region debug */
@@ -106,7 +105,8 @@ i:hover {
 
 .upgrade,
 .album,
-.player_bar {
+.site_bar_top .playlist,
+.site_bar_top .logo {
     padding: 1rem;
 }
 
@@ -119,7 +119,6 @@ i:hover {
     color: var(--sw-secondary);
     overflow-y: hidden;
     width: 240px;
-    padding: 1rem;
     justify-content: space-between;
 }
 
@@ -153,6 +152,12 @@ i:hover {
 
 .site_bar_top .menu img {
     width: 25px;
+}
+
+.site_bar_top #border_green{
+    border-left: 3px solid green;
+    padding-left: 1rem;
+    align-self: left;
 }
 
 .site_bar_top .playlist .add {
@@ -243,10 +248,6 @@ i:hover {
     padding: 1rem 0.75rem;
 }
 
-.content_bar .album a:hover {
-    color: var(--sw-light);
-}
-
 .content_bar .album a {
     font-size: 13px;
     font-weight: bold;
@@ -318,10 +319,6 @@ i:hover {
     margin: 0 1rem;
 }
 
-.player_bar .btn_controller i:hover {
-    color: var(--sw-light);
-}
-
 .player_bar .btn_controller #prova {
     color: var(--sw-light);
 }
@@ -358,10 +355,6 @@ i:hover {
     color: var(--sw-secondary);
 }
 
-.player_bar .audio i:hover {
-    color: var(--sw-light);
-}
-
 .player_bar .audio .progress_bar .long {
     height: 5px;
     width: 100px;
@@ -377,6 +370,32 @@ i:hover {
 }
 
 /* #endregion player_bar */
+
+/* #region hover&effects*/
+a:hover,
+i:hover {
+    color: var(--sw-light);
+}
+
+.site_bar_top .btn:hover{
+    background-color: var(--sw-light);
+    color: var(--sw-darker);
+}
+
+.player_bar .audio i:hover {
+    color: var(--sw-light);
+}
+
+.player_bar .btn_controller i:hover {
+    color: var(--sw-light);
+}
+
+.content_bar .album a:hover {
+    color: var(--sw-light);
+}
+
+/* #endregion hover&effects*/
+
 
 /****************************************
 RESPONSIVE LAYOUT
