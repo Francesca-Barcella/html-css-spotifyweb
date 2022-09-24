@@ -380,6 +380,11 @@ i:hover {
     color: var(--sw-darker);
 }
 
+.content_bar .upgrade .btn_up:hover{
+    padding: 1.1rem 3.1rem;
+    font-size: 17px;
+}
+
 .player_bar .audio i:hover {
     color: var(--sw-light);
 }
