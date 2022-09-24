@@ -594,7 +594,8 @@ RESPONSIVE LAYOUT
     .site_bar_top .logo_lg,
     .site_bar_top .menu h4,
     .site_bar_top .playlist,
-    .site_bar_bottom {
+    .site_bar_bottom,
+    .song img {
         display: none;
     }
 
@@ -609,6 +610,20 @@ RESPONSIVE LAYOUT
     .site_bar_top #border_green {
         border: 0px;
     }
+
+    .player_bar .audio{
+        flex-wrap: wrap;
+    }
+
+    .player_bar .song{
+       justify-content: flex-start;
+    }
+
+    .player_bar .song .center h3{
+        margin-right: 1rem;
+     }
+
+ 
 
 }
 
