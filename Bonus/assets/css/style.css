@@ -107,7 +107,8 @@ li {
 .album,
 .site_bar_top .playlist,
 .site_bar_top .logo,
-.site_bar_bottom {
+.site_bar_bottom,
+.player_bar {
     padding: 1rem;
 }
 
@@ -255,44 +256,44 @@ li {
     aspect-ratio: 1 / 1;
 }
 
-#metal{
+#metal {
     background-image: url(../img/metal_lifting.jpg);
 }
 
-#stranger{
+#stranger {
     background-image: url(../img/stranger.jpeg);
 }
 
-#quiet{
+#quiet {
     background-image: url(../img/aquietplace.jpeg);
 }
 
-#split{
+#split {
     background-image: url(../img/split.jpeg);
 }
 
-#cure{
+#cure {
     background-image: url(../img/cure.jpeg);
 }
 
-#sinister{
+#sinister {
     background-image: url(../img/sinister.jpeg);
 }
 
-#radar{
+#radar {
     background-image: url(../img/radar.jpeg);
 }
 
-#mix{
+#mix {
     background-image: url(../img/mixdaily.jpeg);
 }
 
-#rey{
+#rey {
     background-image: url(../img/youg.jpeg);
     border-radius: 50%;
 }
 
-#einaudi{
+#einaudi {
     background-image: url(../img/einaudi.jpeg);
     border-radius: 50%;
 }
@@ -447,7 +448,7 @@ i:hover {
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 
 }
 
@@ -458,7 +459,7 @@ i:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.content_bar .card:hover .tondo{
+.content_bar .card:hover .tondo {
     border-radius: 50%;
 }
 
@@ -583,6 +584,11 @@ RESPONSIVE LAYOUT
 
     .content_bar {
         width: calc(100% - 50px);
+    }
+
+    .content_bar .upgrade {
+        width: calc(100% - 50px);
+        margin-right: -1.5rem;
     }
 
     .site_bar_top .logo_lg,
