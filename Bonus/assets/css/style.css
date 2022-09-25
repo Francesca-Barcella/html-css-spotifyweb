@@ -11,6 +11,7 @@ DESKTOP (LG) FIRST
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--sw-primary)
 }
 
 img {
@@ -392,7 +393,13 @@ li {
     width: 200px;
     background-color: var(--sw-secondary-lite);
     border-radius: 5px;
+    align-items: center;
 }
+
+.player_bar .controller .progress_bar .short.circle {
+    justify-content: flex-end;
+}
+
 
 .player_bar .audio {
     align-items: center;
@@ -416,9 +423,19 @@ li {
 
 .player_bar .audio .progress_bar .short {
     height: 5px;
-    width: 25px;
+    width: 50px;
     background-color: var(--sw-secondary-lite);
     border-radius: 5px;
+}
+
+.player_bar .audio .progress_bar .short.circle {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.player_bar .audio .progress_bar .short.circle i {
+    display: none;
+    color: var(--sw-light);
 }
 
 /* #endregion player_bar */
@@ -449,7 +466,6 @@ i:hover {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .content_bar .card:hover .brano>div {
@@ -467,11 +483,25 @@ i:hover {
     cursor: pointer;
 }
 
-.player_bar .audio i:hover {
+.player_bar i:hover {
     color: var(--sw-light);
 }
 
-.player_bar .btn_controller i:hover {
+.player_bar .song .name:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.player_bar .progress_bar:hover {
+    cursor: pointer;
+}
+
+.player_bar .progress_bar:hover .short {
+    background-color: green;
+}
+
+.player_bar .audio .progress_bar:hover .circle i{
+    display: inline-block;
     color: var(--sw-light);
 }
 
@@ -539,6 +569,18 @@ RESPONSIVE LAYOUT
         width: 50%;
     }
 
+    .site_bar .logo_xs {
+        margin-bottom: 1rem;
+    }
+
+    .site_bar img {
+        margin-bottom: 0.5rem;
+    }
+
+    .content_bar .upgrade {
+        margin-right: -1rem;
+    }
+
     .player_bar .controller .progress_bar .long {
         height: 5px;
         width: 150px;
@@ -588,7 +630,7 @@ RESPONSIVE LAYOUT
 
     .content_bar .upgrade {
         width: calc(100% - 50px);
-        margin-right: -1.5rem;
+        margin-right: -1rem;
     }
 
     .site_bar_top .logo_lg,
@@ -611,20 +653,29 @@ RESPONSIVE LAYOUT
         border: 0px;
     }
 
-    .player_bar .audio{
+    .player_bar .song {
+        width: 120px;
+    }
+
+    .player_bar .controller {
+        justify-content: flex-start;
+        margin-left: -2rem;
+    }
+
+    .player_bar .audio {
         flex-wrap: wrap;
     }
 
-    .player_bar .song{
-       justify-content: flex-start;
+
+    .player_bar .audio {
+        display: inline;
+        margin-top: 0.5rem;
     }
 
-    .player_bar .song .center h3{
-        margin-right: 1rem;
-     }
-
- 
-
+    .player_bar .audio .progress_bar {
+        margin-top: 1rem;
+        justify-content: center;
+    }
 }
 
 /* #endregion responsive XS */
